@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>How to Add Custom Fonts in WooCommerce Order Emails</title>
+        <meta name="description" content="Step-by-step Tutorial" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+        <link rel="shortcut icon" href="../img/icons/favicon.ico">
+        <link href="../css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/custom-wc.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+
+    </head>
+    <body data-smooth-scroll-offset="77">
+        <div class="nav-container">
+            <div class="via-1538504852235" via="via-1538504852235" vio="html2">
+                <div class="bar bar--sm visible-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3 col-md-2">
+                                <a href="../woocommerce.html"> <img class="logo logo-dark" alt="logo" src="../img/logo.svg"> </a>
+                            </div>
+                            <div class="col-9 col-md-10 text-right">
+                                <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i class="icon icon--sm stack-interface stack-menu"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="menu1" class="bar bar-1 hidden-xs" data-scroll-class="10px:pos-fixed">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-2 hidden-xs">
+                                <div class="bar__module">
+                                    <a href="../woocommerce.html"> <img class="logo logo-dark" alt="logo" src="../img/logo.svg"> </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                                <div class="bar__module">
+                                    <ul class="menu-horizontal text-left">
+                                        <li> <a href="../woocommerce.html#about" class="inner-link" target="_self">About<br></a> </li>
+                                        <li> <a href="../woocommerce.html#portfolio" class="inner-link" target="_self">
+                                            Portfolio<br></a> </li>
+                                        <li> <a href="../woocommerce.html#documentation" class="inner-link" target="_self">Documentation<br></a> </li>
+                                        <li> <a href="../woocommerce.html#faq" class="inner-link" target="_self">
+                                            Faq<br></a> </li>
+                                        <li> <a href="../woocommerce.html#reviews" class="inner-link" target="_self">
+                                            Reviews<br></a> </li>
+                                        <li> <a href="../woocommerce.html#tutorials" class="inner-link" target="_self">
+                                            Tutorials<br></a> </li>
+                                    </ul>
+                                </div>
+                                <div class="bar__module">
+                                    <a class="btn btn--sm type--uppercase" href="../helpdesk.html"> <span class="btn__text">
+                                        Help Desk</span> </a>
+                                    <a class="btn btn--sm btn--primary type--uppercase" href="https://themeforest.net/item/woocommerce-email-templates/6348135" target="_blank"> <span class="btn__text">
+                                        Buy Now
+                                        </span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-container">
+            <section class="space--sm">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <article>
+                                <div class="article__title text-center">
+                                    <h1 class="h2">How to Add Custom Fonts in<br>WooCommerce Order Emails</h1> <span>Category: </span><span><a href="../woocommerce.html">WooCommerce</a></span> 
+                                </div>
+                                <div class="article__body">
+                                    <figure class="text-center"> 
+                                        <img class="boxed boxed--border box-shadow" alt="Custom Fonts in WooCommerce Order Emails" src="../img/tutorials/woocommerce/fonts.png">
+                                        <figcaption>Custom Fonts in WooCommerce Order Emails</figcaption>
+                                    </figure>
+                                    <br><br>    
+                                    <ol class="process-3">
+                                        <li class="process_item">
+                                            <div class="process__number"><span>1</span></div>
+                                            <div class="process__body">
+                                                <h4>Upload your fonts to your WordPress, CDN or use third party service like <a href="https://fonts.google.com/" target="_blank">Google Fonts ↗</a>.</h4>
+                                            </div>
+                                        </li>
+                                        <li class="process_item">
+                                            <div class="process__number"><span>2</span></div>
+                                            <div class="process__body">
+                                                <h4>Open the file <span class="type--bold">email-header.php</span> and copy the URL of the font into the &lt;head&gt; tag of the document,—for example,</h4>
+                                                <pre>&lt;head&gt;
+...
+...
+&lt;link href="https://fonts.googleapis.com/css?family=<strong>MyNewFont</strong>" rel="stylesheet"&gt;
+&lt;/head&gt;</pre>
+                                            </div>
+                                        </li>
+                                        <li class="process_item">
+                                            <div class="process__number"><span>3</span></div>
+                                            <div class="process__body">
+                                                <h4>Use the following CSS rules to specify these families in files <span class="type--bold">email-header.php</span>, <span class="type--bold">email-footer.php</span> and <span class="type--bold">email-styles.php</span>,</h4>
+                                                <pre>font-family: '<strong>MyNewFont</strong>', sans-serif;</pre>
+                                            </div>
+                                        </li>
+                                        <li class="process_item">
+                                            <!-- <div class="process__number"><span>a</span></div> -->
+                                            <div class="process__body">
+                                                <h4>Style an element with your new font, either in a stylesheet:</h4>
+                                                <pre>.selector {
+  font-family: '<strong>MyNewFont</strong>', serif;
+}</pre>
+                                            </div>
+                                        </li>
+                                        <li class="process_item">
+                                            <!-- <div class="process__number"><span>b</span></div> -->
+                                            <div class="process__body">
+                                                <h4>or with an inline style on the element itself:</h4>
+                                                <pre>&lt;h1 style="font-family: '<strong>MyNewFont</strong>', serif;"&gt;Your text&lt;/h1&gt;</pre>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <br>
+                                    <br>
+                                    <h3>Email Templates Main Files</h3>
+                                    <ul class="bullets">
+                                        <li><span class="type--bold">email-header.php.</span> This file contains the HTML header of the email.</li>
+                                        <li><span class="type--bold">email-footer.php.</span> This file contains the HTML footer of email.</li>
+                                        <li><span class="type--bold">email-styles.php.</span> WooCommerce takes a set of CSS rules and dynamically inserts them into the template as inline styles.</li>
+                                    </ul>
+
+
+
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--secondary">
+                <div class="container">
+                    <div class="row text-block">
+                        <div class="col-md-12">
+                            <h3>Tutorials</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                                <a href="../woocommerce/product-links-in-woocommerce-order-emails.html" class="block"> <img alt="Product Links in WooCommerce Order Emails" src="../img/tutorials/woocommerce/thumbs/links.png"> </a>
+                                <div class="feature__body boxed boxed--border">
+                                    <h5>Product Links in WooCommerce Order Emails</h5> <a href="../woocommerce/product-links-in-woocommerce-order-emails.html">
+                                    Learn More >>
+                                    </a> </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                                <a href="../woocommerce/how-to-add-an-attachment-in-woocommerce-order-emails.html" class="block"> <img alt="How to Add an Attachment in WooCommerce Order Emails" src="../img/tutorials/woocommerce/thumbs/attachment.png"> </a>
+                                <div class="feature__body boxed boxed--border">
+                                    <h5>How to Add an Attachment in WooCommerce Order Emails</h5> <a href="../woocommerce/how-to-add-an-attachment-in-woocommerce-order-emails.html">
+                                    Learn More >>
+                                    </a> </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                                <a href="../woocommerce/how-to-translate-woocommerce-order-emails.html" class="block"> <img alt="How to Translate WooCommerce Order Emails" src="../img/tutorials/woocommerce/thumbs/translations.jpg"> </a>
+                                <div class="feature__body boxed boxed--border">
+                                    <h5>How to Translate WooCommerce Order Emails</h5> <a href="../woocommerce/how-to-translate-woocommerce-order-emails.html">
+                                    Learn More >>
+                                    </a> </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="cta">
+                                <a class="btn btn--primary btn--lg type--uppercase" href="https://themeforest.net/item/woocommerce-email-templates/6348135" target="_blank"> 
+                                    <span class="btn__text">Purchase Email Templates</span>
+                                </a>
+                                <p class="lead"> Each purchase of WET comes with 20 different styles —<br> and a lifetime of free fresh designs & bug-fix updates. </p>
+                                <p class="type--fine-print">One purchase for all your <a href="#">future projects</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-3 text-center-xs space--xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-left text-center-xs"> <img alt="logo" class="logo" src="../img/logo.svg">
+                            <ul class="list-inline list--hover">
+                                <li> <a href="../helpdesk.html"><span class="type--fine-print">Help Desk</span></a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-right text-center-xs">
+                            <a href="https://www.ivyca.com/">
+                                <img src="../img/ivyca.png" alt="Ivyca" style="height: 27px; margin: 10px 0px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-left text-center-xs">
+                            <p class="type--fine-print"><span class="update-year"></span>'s Best Selling WooCommerce Email Templates on Envato</p>
+                        </div>
+                        <div class="col-md-6 text-right text-center-xs">
+                            <span class="type--fine-print">&copy;
+                                <span class="update-year"></span> Ivyca, Inc.</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/parallax.js"></script>
+        <script src="../js/smooth-scroll.min.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-127309916-1', 'auto'); ga('send', 'pageview');
+        </script>
+
+    </body>
+
+</html>
